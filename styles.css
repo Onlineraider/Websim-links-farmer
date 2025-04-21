@@ -1,0 +1,101 @@
+body {
+  width: 300px;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.setting-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-size: 14px;
+}
+
+select, input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.status-container {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+#statusText {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#progressText {
+  font-size: 12px;
+  color: #666;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+#startButton {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#startButton:hover {
+  background-color: #45a049;
+}
+
+.secondary {
+  background-color: #f44336;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: #d32f2f;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

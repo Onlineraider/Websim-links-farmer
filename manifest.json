@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Websim Links farmer",
+  "version": "1.0.0",
+  "description": "if you click on the extension, it should open the site \"https://urls.on.websim.ai/\", wait a minute,and then open any link on this page, with \"https://websim.ai/c/*\" and click on random buttons on this sites embedded page (name=contentWindow)",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://urls.on.websim.ai/*",
+    "https://websim.ai/*"
+  ]
+}
